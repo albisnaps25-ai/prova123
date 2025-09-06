@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="profile-card">
+    <!-- Banner -->
+    <div class="cover" id="bannerAd">
+      <img src="v1_4.png" alt="Avatar" class="avatar">
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="name">
+        Nia Aliyah 
+        <span class="verified">✓</span>
+      </div>
+
+      <div class="stats">
+        <span id="photoStats">📷 546 photos</span>
+        <span id="videoStats">🎥 362 videos</span>
+        <span>❤️ 5k</span>
+      </div>
+
+      <div class="handle">
+        @alitah 
+        <span class="status"><span class="dot"></span> Available now</span>
+      </div>
+
+      <!-- Banner Ad -->
+      <div class="banner-ad" id="bannerAdImage">
+        <img src="https://via.placeholder.com/400x90/ff6b6b/ffffff?text=Banner+Ad" alt="Banner Ad">
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button id="explicitBtn">🔞 Explicit Content</button>
+        <button id="livestreamBtn">👁️ +18 Livestream</button>
+      </div>
+
+      <!-- Photo Grid with floating Unlock button -->
+      <div class="photo-grid-wrapper">
+        <div class="photo-grid">
+          <img id="photo1" src="https://via.placeholder.com/150x150/ff9ff3/ffffff?text=Photo+1" alt="Photo 1">
+          <img id="photo2" src="https://via.placeholder.com/150x150/54a0ff/ffffff?text=Photo+2" alt="Photo 2">
+          <img id="photo3" src="https://via.placeholder.com/150x150/5f27cd/ffffff?text=Photo+3" alt="Photo 3">
+        </div>
+        <button class="unlock-btn" id="unlockBtn">🔓 Unlock All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link Confirmation Popup -->
+  <div class="popup-overlay" id="linkPopup">
+    <div class="popup">
+      <div class="popup-header" id="popupTitle">Konfirmo Veprimin</div>
+      <div class="popup-content" id="popupMessage">
+        A jeni të sigurt që doni të vazhdoni në këtë link?
+      </div>
+      <div class="popup-buttons">
+        <button class="popup-btn btn-confirm" id="confirmBtn">Po, Vazhdo</button>
+        <button class="popup-btn btn-cancel" id="cancelBtn">Anulo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Popup -->
+  <div class="popup-overlay stats-popup" id="statsPopup">
+    <div class="popup">
+      <div class="popup-header" id="statsTitle">Statistikat</div>
+      <div class="stats-grid" id="statsGrid">
+        <!-- Dynamic content will be inserted here -->
+      </div>
+      <div class="popup-buttons">
+        <button class="popup-btn btn-cancel" id="closeStatsBtn">Mbyll</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
